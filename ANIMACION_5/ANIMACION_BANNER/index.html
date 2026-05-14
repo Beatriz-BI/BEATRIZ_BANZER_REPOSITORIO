@@ -1,0 +1,181 @@
+<html>
+    <head>
+        <title>PROGRAMAS</title>
+        <style>
+*{
+    padding:0px;
+    margin:0px;
+}
+
+body{
+    background:black;
+}
+.contenedor{
+    width: 1200px;
+    height: 500px;
+    border: 1px solid black;
+    margin:0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.tarjeta1,.tarjeta2,.tarjeta3,.tarjeta4{
+    height: 500px;
+    width:  300px;
+    position:absolute;
+    /*top: -500;*/
+    overflow: hidden;
+}
+
+.tarjeta1{
+    /*background-color: blue;*/
+    background-image: url(assets/html5_ok.png) ;
+    background-size: cover;
+   /* border: 1px solid black;*/
+    left:0px;
+    animation: tarjeta1 3s forwards;
+}
+
+.tarjeta2{
+    background-image: url(assets/css3_ok.png) ;
+    background-size: cover;
+    left: 300px;
+    animation: tarjeta2 3s forwards 3S;
+}
+
+.tarjeta3{
+    background-image: url(assets/js_ok.png) ;
+    background-size: cover;
+    left: 600px;
+    animation: tarjeta1 3s forwards 6S;
+
+}
+.tarjeta4{
+    background-image: url(assets/bootstrap_ok.png) ;
+    background-size: cover;
+    left: 900px;
+    animation: tarjeta2 3s forwards 9S;
+
+}
+
+.letrero{
+    width:100%;
+    padding: 10;
+    color:black;
+
+
+    position:absolute;
+    bottom: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    text-align:center;
+    font-family: "Century Gothic";
+    font-size:25px;
+    animation-name: texto ;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+} 
+
+@keyframes texto{
+    from{
+        color: black;
+        -webkit-text-stroke-width: 0.5px;
+        -webkit-text-stroke-color: white;
+    }
+    to{
+        color:white;
+    }
+}
+
+
+
+/*ANIMACIONES*/
+@keyframes tarjeta1{
+    0%{
+        top:500px;
+        transform: rotatey(180deg);
+    }
+    50%{
+        top:-500px;
+    }
+    100%{
+        top:0px;
+    }
+}
+
+@keyframes tarjeta2{
+    0%{
+        top:-500px;
+        transform:rotatey(180deg);
+    }
+    50%{
+        top:500px;
+    }
+    100%{
+        top:0px;
+    }
+}
+
+
+.tarjeta1:hover{
+    transition: 1s;
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.tarjeta2:hover{
+    transition: 1s;
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.tarjeta3:hover{
+    transition: 1s;
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.tarjeta4:hover{
+    transition: 1s;
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.letrero:hover{
+    transition: 1s;
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+
+    </style>
+    </head>
+    <body>
+    <a href="../../tareas.html">VOLVER</a>
+       <div class="contenedor">
+        <div class="tarjeta1">
+        <div class="letrero">
+            <h2>HTML5</h2>
+        </div>
+        </div>
+        <div class="tarjeta2">
+        <div class="letrero">
+            <h2>CSS3</h2>
+        </div>
+        </div>
+        <div class="tarjeta3">
+        <div class="letrero">
+            <h2>JAVA SCRIPT</h2>
+        </div>
+        </div>
+        <div class="tarjeta4">
+         <div class="letrero">
+            <h2>BOOTSTRAP</h2>
+        </div>
+        </div>
+       </div> 
+       <div>
+     </div>
+
+    </body>
+</html>
