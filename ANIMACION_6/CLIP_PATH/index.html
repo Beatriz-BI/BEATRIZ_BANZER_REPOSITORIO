@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAYASITO</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .contenedor{
+            width: 400px;
+            height: 700px;
+            background-color: rgb(124, 226, 242);
+            background-image:url(IMG/c742883e33b6a56efcc7c9fd0a6ffa4c.gif );
+            background-size: cover;
+            position: relative;
+            margin: 0 auto;
+            overflow: hidden;
+
+        }
+
+
+
+        .gorrito{
+            width: 100px;
+            height: 100px;
+            background-color:yellow;
+            background-image: url(IMG/morado_blanco.png);
+            background-size: cover;
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+            position: absolute;
+            left: 150px;
+            top: 100px;
+            z-index: 10;        /* Asegura que esté por encima de la otra imagen */
+        }
+
+        .star{
+            width: 30px;
+            height: 30px;
+            background-color:blue;
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+            position: absolute;
+            left: 185px;
+            top: 90px;
+            z-index: 10;        /* Asegura que esté por encima de la otra imagen */
+        }
+
+        .cabello{
+            width: 160px;
+            height: 80px;
+            background-color:green;
+            position:absolute;
+            clip-path: polygon(0% 15%, 15% 15%, 28% 0, 71% 0, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+            left: 120px;
+            top: 185px;
+            z-index: 9;        /* Asegura que esté por encima de la otra imagen */
+        
+        }
+               
+        .ojoD{
+            width: 18px;
+            height: 18px;
+            /*background-color:black;*/
+            background-image: url(IMG/ojo.png);
+            background-size: cover;
+            clip-path: circle(50% at 50% 50%);
+            position: absolute;
+            left: 170px;
+            top: 210px;
+            z-index: 10;  
+            animation: ojoD 1s 3 backwards ;
+        }
+
+        @keyframes ojoD{
+            from{
+                background-image: url(IMG/ojo.png);
+                 opacity: 0;
+            }
+            to{
+               
+                background-image: url(IMG/ojo_verde.png);
+
+            }
+        }
+
+
+        .ojoI{
+            width: 18px;
+            height: 18px;
+            /*background-color:black;*/
+            background-image: url(IMG/ojo.png);
+            background-size: cover;
+            clip-path: circle(50% at 50% 50%);
+            position: absolute;
+            left: 210px;
+            top: 210px;
+            z-index: 10;  
+            animation: ojoI 1s 3 backwards ;
+        }
+
+        @keyframes ojoI{
+            from{
+                background-image: url(IMG/ojo.png);
+                 opacity: 0;
+            }
+            to{
+               
+                background-image: url(IMG/ojo_verde.png);
+
+            }
+        }
+
+        .sombraD{
+            width: 10px;
+            height: 10px;
+            background-color:pink;
+            clip-path: circle(50% at 50% 50%);
+            position: absolute;
+            left: 160px;
+            top: 230px;
+            z-index: 10;  
+        }
+
+        .sombraI{
+            width: 10px;
+            height: 10px;
+            background-color:pink;
+            clip-path: circle(50% at 50% 50%);
+            position: absolute;
+            left: 230px;
+            top: 230px;
+            z-index: 10;  
+        }
+
+        .nariz{
+            width: 100px;
+            height: 45px;
+            background-color:red;
+            clip-path: ellipse(25% 40% at 50% 50%);
+            position: absolute;
+            left: 150px;
+            top: 215px;
+            z-index: 10;  
+        }
+
+        .boca{
+            width: 40px;
+            height: 30px;
+            background-color:red;
+           clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
+            position: absolute;
+            left: 180px;
+            top: 235px;
+            z-index: 10;  
+        }
+
+        .cabeza{
+            width: 100px;
+            height: 100px;
+            background-color:whitesmoke;
+            clip-path: circle(50% at 50% 50%);
+            position: absolute;
+            left: 150px;
+            top: 180px;
+            z-index: 9;
+            /*z-index:-1; /* imagen esta detrás*/
+        }
+        .cuello{
+            width: 140px;
+            height: 120px;
+            background-color:blue;
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+            position: absolute;
+            left: 130px;
+            top: 220px;
+            z-index: 8;
+            /*z-index:-1; /* imagen esta detrás*/
+        }
+
+
+        .cuerpo{
+            width: 120px;
+            height: 160px;
+            background-image: url(IMG/rojo_amarillo.png);
+            /*background-image: url(IMG/cuadro_rojo.png);*/
+            background-size: cover;
+            clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+            position: absolute;
+            left: 140px;
+            top: 280px;
+            z-index: 7;
+            
+        }
+
+        .brazoD{
+            width: 65px;
+            height: 160px;
+            background-color:rgb(6, 6, 80);
+            clip-path: inset(5% 20% 15% 10%);
+            position: absolute;
+            left: 130px;
+            top: 260px;
+            z-index: 6;
+
+        }
+
+        .brazoI{
+            width: 65px;
+            height: 160px;
+            background-color:rgb(6, 6, 80);
+            clip-path: inset(5% 20% 15% 10%);
+            position: absolute;
+            left: 210px;
+            top: 260px;
+            z-index: 6;
+
+        }
+
+        .manoD{
+            width: 65px;
+            height: 30px;
+            background-color:white;
+            clip-path: circle(50% at 50% 50%);
+            position: absolute;
+            left: 120px;
+            top: 380px;
+            z-index: 6;
+
+        }
+
+        .manoI{
+            width: 65px;
+            height: 30px;
+            background-color:white;
+            clip-path: circle(50% at 50% 50%);
+            position: absolute;
+            left: 215px;
+            top: 380px;
+            z-index: 6;
+
+        }
+
+        .piernaD{
+            width: 65px;
+            height: 170px;
+            background-color:purple;
+            background-image: url(IMG/lineas_amarillas.png);
+            background-size: cover;
+            clip-path: inset(5% 20% 15% 10%);
+            position: absolute;
+            left: 140px;
+            top: 400px;
+            z-index: 6;
+
+        }
+
+        .piernaI{
+            width: 65px;
+            height: 170px;
+            background-color:purple;
+            background-image: url(IMG/lineas_amarillas.png);
+            background-size: cover;
+            clip-path: inset(5% 20% 15% 10%);
+            position: absolute;
+            left: 200px;
+            top: 400px;
+            z-index: 6;
+
+        }
+
+        .pieD{
+            width: 160px;
+            height: 70px;
+            background-color:blue;
+            background-image: url(IMG/ondas_azul.png);
+            background-size: cover;
+            clip-path: ellipse(25% 40% at 50% 50%);
+            position: absolute;
+            left: 80px;
+            top: 520px;
+            z-index: 7;
+
+        }
+
+        .pieI{
+            width: 160px;
+            height: 70px;
+            background-color:blue;
+            background-image: url(IMG/ondas_azul.png);
+            background-size: cover;
+            clip-path: ellipse(25% 40% at 50% 50%);
+            position: absolute;
+            left: 160px;
+            top: 520px;
+            z-index: 7;
+
+        }
+
+        .piso{
+            width: 400px;
+            height: 400px;
+            background-image: url(IMG/6588018_3364247.jpg);
+            clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+            position: absolute;
+            left: 0px;
+            top: 490px;
+            z-index: 0;
+        }
+
+
+    </style>
+</head>
+<body>
+    <a href="../../proyectos.html">VOLVER</a>
+<div class="contenedor">
+    <div class="gorrito"></div>
+    <div class="cabello"></div>
+    <div class="star"></div>
+    <div class="ojoD"></div>
+    <div class="ojoI"></div>
+    <div class="nariz"></div>
+    <div class="boca"></div>
+    <div class="cabeza"></div>
+    <div class="sombraD"></div>
+    <div class="sombraI"></div>
+    <div class="cuello"></div>
+    <div class="cuerpo"></div>
+    <div class="brazoD"></div>
+    <div class="brazoI"></div>
+    <div class="manoD"></div>
+    <div class="manoI"></div>
+    <div class="piernaD"></div>
+    <div class="piernaI"></div>
+    <div class="pieD"></div>
+    <div class="pieI"></div>
+    <div class="piso"></div>
+
+</div>
+</body>
+</html>
