@@ -11,7 +11,7 @@ body{
 .contenedor{
     width: 500px;
     height: 750px;
-    background-image: url(../img/3_1.png);
+    background-image: url(../img/3_1_ok.png);
     background-size: cover;
     border: 1px solid white;
     margin: 0 auto; /*centrar el contendor*/
@@ -62,7 +62,7 @@ body{
     width: 600px;
     height: 500px;
     /*background-color: blue;*/
-    background-image: url(../img/2_1.png);
+    background-image: url(../img/2_1_ok.png);
     background-size: cover;
     margin:cover;
     position: absolute;
