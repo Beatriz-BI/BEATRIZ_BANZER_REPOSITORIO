@@ -82,11 +82,11 @@ body{
     position: absolute;
     top: 125px;
     left:-50px;*/
-    width:700px;
+    width:650px;
     height:400px;
     position: absolute;
     top: 80px;
-    left:-100px;
+    left:-180px;
     z-index: 4;
 }
 
