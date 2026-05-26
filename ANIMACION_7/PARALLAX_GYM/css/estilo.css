@@ -73,20 +73,18 @@ body{
 }
 
 .modelo{
-    /*width: 220px;
-    height: 320px;
-    top:150px;
-    left:22px;*/
-    /*width:280px;
-    height:350px;
-    position: absolute;
-    top: 125px;
-    left:-50px;*/
-    width:350px;
+   /*width:350px;
     height:500px;
     position: absolute;
     top: 75px;
     left:-35px;
+    position:absolute;
+    z-index: 4;*/
+    width:600px;
+    height:400px;
+    position: absolute;
+    top: 80px;
+    left:-170px;
     position:absolute;
     z-index: 4;
 }
